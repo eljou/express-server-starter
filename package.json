@@ -1,0 +1,28 @@
+{
+  "name": "express-server-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src/server.js",
+    "dev": "nodemon src/server.js --exec babel-node",
+    "build": "babel src --out-dir dist --source-maps",
+    "serve": "node dist/server.js"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.1.5",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "faker": "^4.1.0",
+    "nodemon": "^1.17.5"
+  }
+}
