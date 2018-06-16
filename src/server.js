@@ -3,7 +3,6 @@ import express from 'express'
 import cors from 'cors'
 import logger from 'morgan'
 
-
 import conf from './config'
 import setRoutes from './routes'
 import setUpDatabaseConnection from './services/db'
