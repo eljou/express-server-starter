@@ -1,9 +1,9 @@
-import { config } from 'dotenv';
-config();
+import { config } from 'dotenv'
+config()
 
-let configs;
+let configs
 if (process.env.ENV == 'development') {
-    configs = require('./local');
+	configs = require('./local')
 } // otherwise load other configuration
 
-export default configs.default;
+export default configs.default
